@@ -1,6 +1,6 @@
-# Materias do primeiro semestre - Lógica de Programação
+# Matérias do primeiro semestre - Lógica de Programação
 
-Este repositório contém os códigos referentes aos exercícios de lógica de programação do primeiro semestre.
+Este repositório contém os códigos referentes aos exercícios de lógica de programação do primeiro semestre, organizados por datas.
 
 ## Exercícios
 
@@ -19,10 +19,6 @@ b) R$100,00 se o motorista ultrapassar de 11 a 30 km/h a velocidade permitida.
 
 c) R$200,00 se estiver acima de 31 km/h da velocidade permitida.
 
-## Uso
+### Exercícios em JavaScript (HTML):
+Além dos exercícios em Portugol, há também um arquivo HTML que contém os mesmos exercícios, porém implementados em linguagem JavaScript.
 
-Os códigos estão disponíveis para consulta e estudo da lógica de programação utilizando a linguagem Portugol.
-
-## Licença
-
-Este repositório está sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais detalhes.
