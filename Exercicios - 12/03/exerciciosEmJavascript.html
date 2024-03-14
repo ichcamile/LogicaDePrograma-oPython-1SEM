@@ -6,6 +6,9 @@
   <title>Execução de Funções</title>
   <style>
     /* CSS */
+    h1,button{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
     .button-78 {
       align-items: center;
       appearance: none;
@@ -125,39 +128,40 @@
 
   <script>
     function exercicio1() {
-     const numero = prompt(parseInt("Escreva um número \n"))
+        const numero = parseInt(prompt("Escreva um número \n"));
 
-     if (numero > 10){
-        alert("O número é maior que 10!")
-     } else {
-        alert("O número é menor que 10!")
-
-     }
+        if (numero > 10) {
+            alert("O número é maior que 10!");
+        } else {
+            alert("O número é menor que 10!");
+        }
     }
 
     function exercicio2() {
-        const number = prompt(parseInt("Quantas maçãs você deseja comprar?"))
+        const number = parseInt(prompt("Quantas maçãs você deseja comprar?"));
 
-        if(number >= 12){
-            alert("As maçãs valem R$1,00")
-        }else("As maçãs valem R$1,30")
+        if (number >= 12) {
+            alert("As maçãs valem R$1,00");
+        } else {
+            alert("As maçãs valem R$1,30");
+        }
     }
 
     function exercicio3() {
-    const velocidade = parseInt(prompt("Escreva a velocidade máxima da avenida"))
-    const avenidaMax = parseInt(prompt("Escreva a velocidade em que estava dirigindo"))
+        const velocidadeMaxima = parseInt(prompt("Escreva a velocidade máxima da avenida"));
+        const velocidadeMotorista = parseInt(prompt("Escreva a velocidade em que estava dirigindo"));
     
-    let total = velocidade - avenidaMax
+        const diferencaVelocidade = velocidadeMotorista - velocidadeMaxima;
     
-        if(total <= 10){
-            alert("A sua multa é de R$50,00")
-        } else if (total <= 30){
-            alert("A sua multa é de R$100,00")
-        }else{
-            alert("A sua multa é de R$200,00")
-
+        if (diferencaVelocidade <= 10) {
+            alert("A sua multa é de R$50,00");
+        } else if (diferencaVelocidade <= 30) {
+            alert("A sua multa é de R$100,00");
+        } else {
+            alert("A sua multa é de R$200,00");
         }
     }
-  </script>
+</script>
+
 </body>
 </html>
