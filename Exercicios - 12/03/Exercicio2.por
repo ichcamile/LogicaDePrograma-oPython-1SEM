@@ -1,18 +1,28 @@
 programa {
   funcao inicio() {
-    // As maÁ„s custam R$1,30 cada se forem compradas menos de uma d˙zia, e R$1,00 se forem compradas pelo menos 12. 
-    // Escreva um programa que leia o n˙mero de maÁ„s compradas, calcule e escreva o total da compra.
+    // As ma√ß√£s custam R$1,30 cada se forem compradas menos de uma d√∫zia, e R$1,00 se forem compradas pelo menos 12. 
+    // Escreva um programa que leia o n√∫mero de ma√ß√£s compradas, calcule e escreva o total da compra.
 
-    real numero
+    inteiro quantidade
+    real valor
+    real total
 
-    escreva("Quantas maÁas vocÍ deseja comprar? \n")
-    leia(numero)
+    escreva("Quantas ma√ßas voc√™ deseja comprar? \n")
+    leia(quantidade)
 
-    se(numero >= 12){
-      escreva("As maÁas valem R$1,00 \n")
+    se(quantidade >= 12){
+      valor = 1.00
+      total = quantidade*valor
+      escreva("As ma√ßas valem R$1,00 \n o valor total da sua compra √© " + total)
+      
+
     }senao{
-      escreva("As maÁas valem R$1,30 \n")
+      valor = 1.30
+      total = quantidade*valor
+      escreva("As ma√ßas valem R$1,30 \n o valor total da sua compra √© " + total)
     }
+
+    
 
   }
 }
