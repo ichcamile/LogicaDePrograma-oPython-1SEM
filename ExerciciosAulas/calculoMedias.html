@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="calculaMedias()">Calcular Médias</button>
+    <script>
+
+        function calculaMedias() {
+            let mediaUnica, mediaGeral, contagemAlunos, mediaMenor, mediaMaior
+
+
+            while(contagemAlunos < 3) {
+
+                //recebe dados dos alunos
+                alert("Bem vindo ao Sistema de Cálculo de Médias")
+                let nomeAluno = prompt("Escreva o nome do Aluno:")
+                let nota1 = parseFloat(prompt("Escreva sua nota em Português"))
+                let nota2 = parseFloat(prompt("Escreva sua nota em Matemática"))
+                let nota3 = parseFloat(prompt("Escreva sua nota em Geografia"))
+
+
+
+                //calcula media unitaria
+                mediaUnica = (nota1 + nota2 + nota3) / 3
+                alert("A média desse aluno é " + mediaUnica)
+
+                //atribui media geral 
+                mediaGeral = mediaGeral + mediaUnica
+
+                //atribui valor as medias menores
+                mediaMenor = mediaUnica
+                mediaMaior = mediaUnica
+
+                //condição das medias
+
+                if (mediaMaior < mediaUnica) {
+                    mediaMaior = mediaUnica
+                }
+
+                if (mediaMenor > mediaUnica) {
+                    mediaMenor = mediaUnica
+                }
+
+                contagemAlunos = contagemAlunos + 1
+                contagemAlunos = 0;
+
+            }
+
+            mediaGeral = mediaGeral / 3
+            alert("A média geral da sala é " + mediaGeral)
+            alert("A maior média é " + mediaMaior)
+            alert("A menor média é " + mediaMenor)
+
+        }
+
+    </script>
+</body>
+
+</html>
