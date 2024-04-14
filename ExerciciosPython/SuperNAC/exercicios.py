@@ -85,12 +85,48 @@ def maiorNumeroEntre():
     else:
         print("O primeiro número não é maior que a soma dos outros números ")
 def produtoAtributos():
-    '''Solicitar o nome do produto, descrição, preço e validade. Apresentar na tela os 
-    dados recebidos.'''
-
+    #Solicitar o nome do produto, descrição, preço e validade. Apresentar na tela os dados recebidos.'''
     produto =  input("Digite o nome do produto ")
     descrição = input("Fale um pouco sobre o produto ")
     preço =  float(input("Qual é o preço do produto "))
     validade = input("Qual a validade do produto ")
 
     print("O nome do produto é " + str(produto) + " \n O descrição do produto é " + str(descrição) + "\n O preço do produto é " + str(preço) + "\n A validade do produto é " + str(validade))
+  
+
+def calcularPercentualVotos():
+    # Calcular o percentual de votos brancos, nulos e válidos em relação ao total de eleitores.
+
+
+def calcularSalarioFuncionario():
+    # Calcular o salário total do funcionário considerando horas extras trabalhadas.
+
+def calcularSalarioVendedor():
+    # Calcular o salário total de um vendedor com base em salário fixo e comissão sobre vendas.
+
+def verificarCompraEstoque():
+    # Verificar se é necessário efetuar compra com base na quantidade atual, máxima e mínima em estoque.
+
+def somaDosMaiores():
+    # Calcular e escrever a soma dos 2 maiores valores entre 3 valores informados.
+
+def nomeDoVencedor():
+    # Identificar o time vencedor com base no número de gols marcados na partida.
+
+def calcularValorCombustivel():
+    # Calcular o valor a ser pago pelo cliente com base no número de litros vendidos e tipo de combustível.
+
+def verificarAposentadoriaEmpregado():
+    # Verificar se um empregado está qualificado para aposentadoria com base em idade e tempo de trabalho.
+
+def imprimirNumerosCrescente():
+    # Imprimir os números de 1 a 10 em ordem crescente.
+
+def imprimirNumerosDecrescente():
+    # Imprimir os números de 1 a 10 em ordem decrescente.
+
+def contarNegativos():
+    # Contar quantos dos 100 valores lidos são NEGATIVOS.
+
+def calcularSomaSeisValores():
+    # Calcular e mostrar a soma de seis valores informados.
