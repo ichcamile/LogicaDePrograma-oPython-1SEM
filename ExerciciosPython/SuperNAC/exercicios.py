@@ -148,4 +148,39 @@ def positivoOuNegativo():
 
     while(resposta != "Não"):
         positivoOuNegativo()
+def calcularSalarioFuncionario():
+    # Entrada de dados
+    horasTrabalhadasMes = float(input("Quantas horas você trabalhou este mês? "))
+    valorHora = float(input("Quanto custa a sua hora? "))
+
+    # Verificação de horas extras
+    if horasTrabalhadasMes > 160:  # 40 horas por semana * 4 semanas = 160 horas
+        print("Você tem horas extras a receber!")
+        
+        horasExtras = horasTrabalhadasMes - 160
+        salarioTotalSemExtras = 160 * valorHora
+        salarioTotalExtras = horasExtras * valorHora * 1.5  # 50% de acréscimo para horas extras
+        salarioTotal = salarioTotalSemExtras + salarioTotalExtras
+        
+        # Print explicativo sobre o cálculo das horas extras
+        print(f"\nO funcionário trabalhou {horasTrabalhadasMes} horas no mês.")
+        print(f"O salário total sem as horas extras é: R$ {salarioTotalSemExtras:.2f}")
+        print(f"O funcionário trabalhou {horasExtras} horas extras no mês.")
+        print(f"O salário total pelas horas extras é: R$ {salarioTotalExtras:.2f}")
+        print(f"O salário total com as horas extras é: R$ {salarioTotal:.2f}")
+    else:
+        salarioTotal = horasTrabalhadasMes * valorHora
+
+    # Saída de dados
+    print(f"\nO salário total do funcionário é: R$ {salarioTotal:.2f}")
+def calcularSalarioVendedor():
+    valorSalario =  float(input("Qual o valor do seu salario? "))
+    valorComissao = float(input("Qual o valor da venda? "))
+    valorSalarioTotal = 0
+
+    if (valorComissao <= 1.500):
+        valorSalarioTotal = valorSalario + (valorComissao * 0.03)
+    else:
+        valorSalarioTotal = valorSalario + (valorComissao * 0.05)
+    print("O valor total do seu salário esse mês, sera:$" + str(valorSalarioTotal))
 
