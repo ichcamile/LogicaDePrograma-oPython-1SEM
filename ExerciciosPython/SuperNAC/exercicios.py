@@ -97,36 +97,70 @@ def produtoAtributos():
 def calcularPercentualVotos():
     # Calcular o percentual de votos brancos, nulos e válidos em relação ao total de eleitores.
 
+    nomeMunicipio = input("Qual o nome do seu município ")
+    totalEleitores = int(input("Inclua o número de eleitores do " + str(nomeMunicipio) + "? "))
+    
+    votosBrancos = int(input("Qual o número de votos brancos?  "))
+    while(votosBrancos > totalEleitores):
+        print("O número de votos brancos excede ao total de moradores!!")
+        votosBrancos = int(input("Qual o número de votos brancos? "))
 
-def calcularSalarioFuncionario():
+    
+    votosValidos = int(input("Qual o número de votos válidos?  "))
+    while(votosValidos > totalEleitores):
+        print("O número de votos nulos excede ao total de moradores!!")
+        votosNulos = int(input("Qual o número de votos nulos?"))
+    
+    
+    votosNulos = int(input("Qual o número de votos nulos?  "))
+    while( votosNulos > totalEleitores):
+        print("O número de votos válidos excede ao total de moradores!!")
+        votosValidos = int(input("Qual o número de votos válidos?"))
+    
+    # Cálculo dos percentuais
+    porcenBranco = (votosBrancos / totalEleitores) * 100
+    porcenNulo = (votosNulos / totalEleitores) * 100
+    porcenValidos = (votosValidos / totalEleitores) * 100
+    
+    # Verificação se a soma dos percentuais é maior que 100%
+    while (porcenBranco + porcenNulo + porcenValidos) != 100  :
+        print("A soma dos percentuais não é igual a 100%. Verifique os números inseridos.")
+        votosBrancos = int(input("Qual o número de votos brancos? "))
+        votosNulos = int(input("Qual o número de votos nulos? "))
+        votosValidos = int(input("Qual o número de votos válidos? "))
+        
+        porcenBranco = (votosBrancos / totalEleitores) * 100
+        porcenNulo = (votosNulos / totalEleitores) * 100
+        porcenValidos = (votosValidos / totalEleitores) * 100
+
+    # Exibição dos resultados
+    print("\nResultado para o município de", nomeMunicipio)
+    print("Votos brancos:", votosBrancos, "(", porcenBranco, "% )")
+    print("Votos nulos:", votosNulos, "(", porcenNulo, "% )")
+    print("Votos válidos:", votosValidos, "(", porcenValidos, "% )")
+
+
+"""def calcularSalarioFuncionario():
     # Calcular o salário total do funcionário considerando horas extras trabalhadas.
-
 def calcularSalarioVendedor():
     # Calcular o salário total de um vendedor com base em salário fixo e comissão sobre vendas.
-
 def verificarCompraEstoque():
     # Verificar se é necessário efetuar compra com base na quantidade atual, máxima e mínima em estoque.
-
 def somaDosMaiores():
     # Calcular e escrever a soma dos 2 maiores valores entre 3 valores informados.
-
 def nomeDoVencedor():
     # Identificar o time vencedor com base no número de gols marcados na partida.
-
 def calcularValorCombustivel():
     # Calcular o valor a ser pago pelo cliente com base no número de litros vendidos e tipo de combustível.
-
 def verificarAposentadoriaEmpregado():
     # Verificar se um empregado está qualificado para aposentadoria com base em idade e tempo de trabalho.
-
 def imprimirNumerosCrescente():
     # Imprimir os números de 1 a 10 em ordem crescente.
-
 def imprimirNumerosDecrescente():
     # Imprimir os números de 1 a 10 em ordem decrescente.
-
 def contarNegativos():
     # Contar quantos dos 100 valores lidos são NEGATIVOS.
-
 def calcularSomaSeisValores():
     # Calcular e mostrar a soma de seis valores informados.
+"""
+calcularPercentualVotos()
