@@ -1,24 +1,17 @@
-# Matérias do primeiro semestre - Lógica de Programação
+# Exercícios do Primeiro Semestre - Lógica de Programação
 
-Este repositório contém os códigos referentes aos exercícios de lógica de programação do primeiro semestre, organizados por datas.
+Este repositório é dedicado aos exercícios de lógica de programação do primeiro semestre. Cada pasta contém seus próprios exercícios e um README específico para orientações adicionais.
 
-## Exercícios
+Dentro de cada pasta, você encontrará os códigos organizados por datas, permitindo uma fácil localização e referência. Para mais informações sobre os exercícios de cada pasta, consulte o respectivo README dentro dela.
 
-### Exercício 1 - em portugol:
-Leia um valor e escreva a mensagem "É MAIOR QUE 10!" se o valor lido for maior que 10, caso contrário escreva NÃO É MAIOR QUE 10!
+## Exercícios em portugol
+Estes exercícios são o primeiro conjunto de práticas em Portugol. O primeiro exercício verifica se um valor é maior que 10, o segundo calcula o total da compra de maçãs com base na quantidade e preço, e o terceiro determina a multa por excesso de velocidade de acordo com os critérios estabelecidos.
 
-### Exercício 2 - em portugol:
-As maçãs custam R$1,30 cada se forem compradas menos de uma dúzia, e R$1,00 se forem compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o total da compra.
-
-### Exercício 3 - em portugol:
-Leia a velocidade máxima permitida em uma avenida e a velocidade com que o motorista estava dirigindo nela. Calcule a multa que uma pessoa vai receber, sabendo que são pagos:
-
-a) R$50,00 se o motorista estiver ultrapassando em até 10 km/h a velocidade permitida (velocidade máxima: 50 km/h e o motorista a 60 km/h).
-
-b) R$100,00 se o motorista ultrapassar de 11 a 30 km/h a velocidade permitida.
-
-c) R$200,00 se estiver acima de 31 km/h da velocidade permitida.
-
-### Exercícios em JavaScript (HTML):
+## Exercícios em JavaScript (HTML):
 Além dos exercícios em Portugol, há também um arquivo HTML que contém os mesmos exercícios, porém implementados em linguagem JavaScript.
 
+## Super NAC - Python
+Uma coleção de funções Python que abrange diversos cálculos e interações com o usuário. Desde finanças pessoais até notas escolares e gestão de estoque, o Super NAC tem algo para todos!
+
+## Technologies ⚙️  
+<img src="https://skillicons.dev/icons?i=git,html,css,js,python" />
