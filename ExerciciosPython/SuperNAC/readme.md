@@ -50,10 +50,8 @@ Bem-vindo ao Super NAC, uma coleção de funções Python que abrange diversos c
 
 Para utilizar qualquer uma das funções, execute o arquivo Python e siga as instruções fornecidas pelo programa para inserir os valores necessários.
 
-### Contribuições
+## Technologies ⚙️  
+<img src="https://skillicons.dev/icons?i=git,python" />
 
-Contribuições são sempre bem-vindas! Se você tem ideias para novas funcionalidades, correções ou melhorias, sinta-se à vontade para abrir um pull request. Se tiver dúvidas ou sugestões, abra uma issue e vamos discutir!
-
----
 
 Espero que você aproveite o Super NAC e encontre utilidade nas funções disponíveis!
