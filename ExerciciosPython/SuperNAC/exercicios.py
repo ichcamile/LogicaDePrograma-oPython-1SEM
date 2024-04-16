@@ -213,30 +213,121 @@ def verificarCompraEstoque12():
         print("Efetuar compra")
 def somaDosMaiores13():
     #Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores
-    numero1 = float(print("Escreva um valor"))
-    numero2 = float(print("Escreva um valor"))
-    numero3 = float(print("Escreva um valor"))
+    valores = []
+
+    for i in range(4):
+        soma = float(input("Escreva um número para ser somado!"))
+        valores.append(soma)
+    
+    valores = sorted(valores, reverse=True)
+    valores.pop()
+    valores = sum(valores)
 
 
+    print(valores)
 def nomeDoVencedor14():
     # Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
+    # Ler o nome dos times e os gols marcados
+    time1 = input("Digite o nome do primeiro time: ")
+    golsTime1 = int(input(f"Quantos gols {time1} marcou? "))
 
+    time2 = input("Digite o nome do segundo time: ")
+    golsTime2 = int(input(f"Quantos gols {time2} marcou? "))
+
+    # Verificar o vencedor
+    if golsTime1 > golsTime2:
+        print(f"O vencedor é {time1}!")
+    elif golsTime2 > golsTime1:
+        print(f"O vencedor é {time2}!")
+    else:
+        print("EMPATE!")
 def calcularValorCombustivel15():
-    # Implementação virá aqui
+    litroCombustivel = float(input("Quantos litros você comprou? "))
+    tipoCombustivel = input("Qual tipo de combustivel? A-Álcool ou G-Gasolina: ").upper()
 
+    while tipoCombustivel != "A" and tipoCombustivel != "G":
+        print("Valor não encontrado! Talvez você esteja inserindo a condição errada.")
+        tipoCombustivel = input("Qual tipo de combustivel? A-Álcool ou G-Gasolina: ").upper()
+
+    if tipoCombustivel == "A":
+      print("Você escolheu o Álcool")
+      valorPorCombustivel = litroCombustivel* 3.39
+      
+      if litroCombustivel <= 20:
+        desconto = 0.03
+        valorDesconto = valorPorCombustivel * desconto
+        valorPorCombustivel -= valorDesconto
+        print(f"O valor total é: R${valorPorCombustivel:.2f}, com um desconto de R${valorDesconto:.2f}.")
+
+      else:
+        desconto = 0.05
+        valorDesconto = valorPorCombustivel * desconto
+        valorPorCombustivel -= valorDesconto
+        print(f"O valor total é: R${valorPorCombustivel:.2f}, com um desconto de R${valorDesconto:.2f}.")
+
+    elif tipoCombustivel == "G":
+      print("Você escolheu o Gasolina")
+
+      valorPorCombustivel = litroCombustivel* 4.89 
+      
+      if litroCombustivel <= 20:
+        desconto = 0.04
+        valorDesconto = valorPorCombustivel * desconto
+        valorPorCombustivel -= valorDesconto
+        print(f"O valor total é: R${valorPorCombustivel:.2f}, com um desconto de R${valorDesconto:.2f}.")
+
+      else:
+        desconto = 0.06
+        valorDesconto = valorPorCombustivel * desconto
+        valorPorCombustivel -= valorDesconto
+        print(f"O valor total é: R${valorPorCombustivel:.2f}, com um desconto de R${valorDesconto:.2f}.")
+
+    else:
+        print("Valor não encontrado! Talvez você esteja inserindo a condição errada.")
 def verificarAposentadoriaEmpregado16():
-    # Implementação virá aqui
+    idadeTrabalho = int(input("Digite o ano de nascimento do empregado: "))
+    tempoTrabalho = int(input("Digite o ano de ingresso na empresa: "))
+    anoAtual = 2024
 
+    idadeTrabalho = anoAtual - idadeTrabalho
+    tempoTrabalho = anoAtual - tempoTrabalho
+
+    if idadeTrabalho >= 65 and tempoTrabalho >=30:
+        print("Requerer aposentadoria")
+    elif idadeTrabalho >= 65:
+        print("Requerer aposentadoria")
+    elif tempoTrabalho >=30:
+        print("Requerer aposentadoria")
+    else: 
+        print("Não requerer!")
 def imprimirNumerosCrescente17():
-    # Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem crescente.
-
-
+    for numero in range(1, 11):
+        print(numero)
 def imprimirNumerosDecrescente18():
-    #  Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem decrescente
-
+    valores = []
+    for numero in range(1, 11):
+        valores.append(numero)
+        valores = sorted(valores, reverse=True)
+       
+    print(valores)
 def contarNegativos19():
-    # Ler 100 valores e escrever quantos desses valores lidos são NEGATIVOS
+    valores = []
 
-def calcularSomaSeisValores():
-    # Faça um algoritmo que receba 6 valores, calcule e mostre a soma de todos eles
-    
+    for i in range (0,3):
+      valor = float(input("Escreva um número!"))
+      if valor < 0:
+          valores.append(valor)
+    print(valores)
+def calcularSomaSeisValores20():
+    valores = []
+
+    for i in range(6):
+        valor = int(input("Escreva um número para ser somado!"))
+        valores.append(valor)
+
+    # Imprimindo os valores informados
+    print("Valores informados:", valores)
+
+    # Calculando a soma dos valores
+    soma = sum(valores)
+    print("Soma dos valores:", soma)
