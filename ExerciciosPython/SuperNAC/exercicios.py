@@ -1,4 +1,4 @@
-def cigarettePrice():
+def cigarettePrice1():
     """Calcular a quantidade dinheiro gasto por um fumante. Dados: o número de 
     anos que ele fuma, o nº de cigarros fumados por dia e o preço de uma carteira 
     com 20 cigarros"""
@@ -19,7 +19,7 @@ def cigarettePrice():
     totalPrice = dayPrice*daySmoke
 
     print("Actually you have spent " + str(totalPrice) + " in this years")
-def priceCarFunction():
+def priceCarFunction2():
 
     """ gere o preço de um carro ao consumidor e os valores pagos pelo imposto e 
     pelo lucro do distribuidor, sabendo o custo de fábrica do carro e que são pagos: 
@@ -40,7 +40,7 @@ def priceCarFunction():
     finalPrice = priceCar + taxCar + commissionSales
 
     print("The initial price is " + str(priceCar) + ". The total price is " + str(finalPrice) + ". The commission is about " + str(commissionSales) + ", and the tax is " + str(taxCar) + ".")
-def sistemaDeNotas():
+def sistemaDeNotas3():
     """Calcular a média final dadas as notas das 3 provas e produzir uma saída com a 
         média e a situação do aluno de acordo com o seguinte critério: média >= 6, 
         aprovado; média >=3 e média < 6, recuperação; média < 3, reprovado. 
@@ -73,7 +73,7 @@ def sistemaDeNotas():
         
     else: 
         print("Você está reprovado")
-def maiorNumeroEntre():
+def maiorNumeroEntre4():
     '''Para ler 3 números reais e verificar se o primeiro é maior que a soma dos outros dois.'''
     number1 = float(input("Digite um número "))
     number2 = float(input("Digite outro número "))
@@ -84,7 +84,7 @@ def maiorNumeroEntre():
         print("O primeiro número é maior que a soma dos outros números ")
     else:
         print("O primeiro número não é maior que a soma dos outros números ")
-def produtoAtributos():
+def produtoAtributos5():
     #Solicitar o nome do produto, descrição, preço e validade. Apresentar na tela os dados recebidos.'''
     produto =  input("Digite o nome do produto ")
     descrição = input("Fale um pouco sobre o produto ")
@@ -92,7 +92,19 @@ def produtoAtributos():
     validade = input("Qual a validade do produto ")
 
     print("O nome do produto é " + str(produto) + " \n O descrição do produto é " + str(descrição) + "\n O preço do produto é " + str(preço) + "\n A validade do produto é " + str(validade))
-def calcularPercentualVotos():
+def somaDosCem6():
+    resultado = 0
+    for i in range(0, 101): 
+        resultado += i
+    print(f"A soma dos 100 primeiros números é: {resultado}")
+def tabuada7():
+    numero = float(input("Qual número você deseja saber a tabuada? (Nosso sistema aceita números decimais!)"))
+    tabuada = int(input("Até qual número sua tabuada irá?"))
+    
+    for x in range(1, tabuada + 1):  # Alterado para incluir o número da tabuada
+        resultado = numero * x
+        print(f"{numero} x {x} = {resultado}")
+def calcularPercentualVotos8():
     # Calcular o percentual de votos brancos, nulos e válidos em relação ao total de eleitores.
 
     nomeMunicipio = input("Qual o nome do seu município ")
@@ -136,7 +148,7 @@ def calcularPercentualVotos():
     print("Votos brancos:", votosBrancos, "(", porcenBranco, "% )")
     print("Votos nulos:", votosNulos, "(", porcenNulo, "% )")
     print("Votos válidos:", votosValidos, "(", porcenValidos, "% )")
-def positivoOuNegativo():
+def positivoOuNegativo9():
     numero = float(input("Insira o número que você deseja verificar  "))
     
     if (numero >= 0):
@@ -148,7 +160,7 @@ def positivoOuNegativo():
 
     while(resposta != "Não"):
         positivoOuNegativo()
-def calcularSalarioFuncionario():
+def calcularSalarioFuncionario10():
     # Entrada de dados
     horasTrabalhadasMes = float(input("Quantas horas você trabalhou este mês? "))
     valorHora = float(input("Quanto custa a sua hora? "))
@@ -173,7 +185,7 @@ def calcularSalarioFuncionario():
 
     # Saída de dados
     print(f"\nO salário total do funcionário é: R$ {salarioTotal:.2f}")
-def calcularSalarioVendedor():
+def calcularSalarioVendedor11():
     valorSalario =  float(input("Qual o valor do seu salario? "))
     valorComissao = float(input("Qual o valor da venda? "))
     valorSalarioTotal = 0
@@ -183,4 +195,48 @@ def calcularSalarioVendedor():
     else:
         valorSalarioTotal = valorSalario + (valorComissao * 0.05)
     print("O valor total do seu salário esse mês, sera:$" + str(valorSalarioTotal))
+def verificarCompraEstoque12():
+    # Lendo a quantidade atual em estoque
+    quantidadeAtual = int(input("Digite a quantidade atual em estoque do produto: "))
 
+    # Lendo a quantidade máxima em estoque
+    quantidadeMaxima = int(input("Digite a quantidade máxima em estoque do produto: "))
+
+    # Lendo a quantidade mínima em estoque
+    quantidadeMinima = int(input("Digite a quantidade mínima em estoque do produto: "))
+
+    quantidadeMedia = (quantidadeMaxima + quantidadeMinima) /2
+
+    if quantidadeAtual >= quantidadeMedia:
+        print("Não efetuar compra!")
+    else: 
+        print("Efetuar compra")
+def somaDosMaiores13():
+    #Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores
+    numero1 = float(print("Escreva um valor"))
+    numero2 = float(print("Escreva um valor"))
+    numero3 = float(print("Escreva um valor"))
+
+
+def nomeDoVencedor14():
+    # Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
+
+def calcularValorCombustivel15():
+    # Implementação virá aqui
+
+def verificarAposentadoriaEmpregado16():
+    # Implementação virá aqui
+
+def imprimirNumerosCrescente17():
+    # Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem crescente.
+
+
+def imprimirNumerosDecrescente18():
+    #  Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem decrescente
+
+def contarNegativos19():
+    # Ler 100 valores e escrever quantos desses valores lidos são NEGATIVOS
+
+def calcularSomaSeisValores():
+    # Faça um algoritmo que receba 6 valores, calcule e mostre a soma de todos eles
+    
