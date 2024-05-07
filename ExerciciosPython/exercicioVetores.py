@@ -12,3 +12,5 @@ def exercicio1():
 
 def exercicio2():
    # Ler um conjunto de números reais, armazenando-o em vetor e calcular o quadrado dos componentes deste vetor, armazenando o resultadoem outro vetor. Os conjuntos tem 20 elementos cada. Imprimir todas as listas.
+
+    
