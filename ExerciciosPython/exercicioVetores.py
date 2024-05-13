@@ -27,6 +27,27 @@ def exercicio2():
 
 def exercicio3():
     #Faça um programa que leia um vetor de 18 posições e, em seguida, leia também 2 valores (X e Y) quaisquer correspondentes a 2 posições no vetor. Ao final seu programa deverá escrever a soma dos valores encontrados nas respectivas posições X e Y
+    
+    vetores = []
 
-def exercicio4():
+    for i in range(0,18):
+        numerosVetor = int(input("Digite o número que irá entrar no Vetor"))
+        vetores.append(numerosVetor)
+
+        
+    valorX = int(input("Digite um valor"))
+    valorY = int(input("Digite um valor"))
+
+    print("")
+    while (valorX < 1 or valorX > 18) or (valorY < 1 or valorY > 18):
+        print("Posição inválida. Por favor, digite valores entre 1 e 18.")
+    
+#finalizar script
+
+
+
+
+
+
+# def exercicio4():
     #Leia um vetor de 10 posições. Contar e escrever quantos valores pares ele possui
