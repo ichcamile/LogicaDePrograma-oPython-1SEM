@@ -31,23 +31,34 @@ def exercicio3():
     vetores = []
 
     for i in range(0,18):
-        numerosVetor = int(input("Digite o número que irá entrar no Vetor"))
+        numerosVetor = int(input("Digite o número que irá entrar no Vetor "))
         vetores.append(numerosVetor)
 
-        
     valorX = int(input("Digite um valor"))
     valorY = int(input("Digite um valor"))
 
-    print("")
     while (valorX < 1 or valorX > 18) or (valorY < 1 or valorY > 18):
         print("Posição inválida. Por favor, digite valores entre 1 e 18.")
-    
-#finalizar script
+        valorX = int(input("Digite um valor para X: "))
+        valorY = int(input("Digite um valor para Y: "))
+
+    somaDosVetores = vetores[valorX - 1] + vetores[valorY - 1]
+    print(f"A soma dos valores nas posições {valorX} e {valorY} é: {somaDosVetores}")
 
 
 
-
-
-
-# def exercicio4():
+def exercicio4():
     #Leia um vetor de 10 posições. Contar e escrever quantos valores pares ele possui
+    valoresDez = []
+
+    for i in range(0,10):
+        valores = int(input("Escreva um número   "))
+        valoresDez.append(valores)
+    
+    contadorPares = 0
+    for i in valoresDez:
+        if i % 2 == 0:
+            contadorPares += 1
+    
+    print("Valores inseridos:", valoresDez)
+    print(f"O vetor possui {contadorPares} valores pares.")
