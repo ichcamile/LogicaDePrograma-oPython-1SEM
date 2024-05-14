@@ -89,7 +89,7 @@ def exercicio03():
 def exercicio04():
     listaDeAlunos = []
 
-    for i in range (0,5):
+    for i in range (0,20):
         alunos = input(f"Insira o nome do aluno {1+i}")
         listaDeAlunos.append(alunos)
     print (f"Essa é a sua lista atual de alunos,{listaDeAlunos}")
@@ -102,3 +102,4 @@ def exercicio04():
     else:
         print("Índice fora do intervalo da lista.")
 
+ 
